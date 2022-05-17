@@ -3,7 +3,11 @@
     <!-- HEADER -->
     <AppHeader />
     <!-- MAIN -->
-    <main>Main</main>
+    <main>
+      <div class="container">
+        Content goes here
+      </div>
+    </main>
     <AppBlueLine />
     <!-- FOOTER -->
     <AppFooter />
@@ -26,5 +30,11 @@ export default {
 </script>
 
 <style>
-
+@import "./style/common.scss";
+main {
+  width: 100%;
+  padding: 50px 0;
+  color: white;
+  background-color: #1c1c1c;
+}
 </style>
