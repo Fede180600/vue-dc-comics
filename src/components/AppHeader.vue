@@ -78,7 +78,6 @@ export default {
 
 <style lang="scss" scoped>
 @import "../style/variables.scss";
-@import "../style/common.scss";
 .header{
     height: 80px;
     .container{
