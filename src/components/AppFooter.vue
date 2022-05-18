@@ -91,6 +91,7 @@ export default {
             button {
                 padding: 10px;
                 text-transform: uppercase;
+                font-weight: 600;
                 background-color: transparent;
                 color: white;
                 border: 1px solid $brand-primary-color;
