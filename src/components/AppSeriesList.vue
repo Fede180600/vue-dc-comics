@@ -4,6 +4,9 @@
         <div class="series_list">
             <AppSerie v-for="(serie, index) in series" :key="index" :productObj="serie" />
         </div>
+        <div class="button_container">
+            <button>load more</button>
+        </div>
     </section>
 </template>
 
@@ -97,15 +100,36 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../style/variables.scss";
 
 .series {
     padding-top: 30px;
     padding-bottom: 10px;
+    position: relative;
+    >span {
+        text-transform: uppercase;
+        background-color: $brand-primary-color;
+        padding: 10px;
+        font-weight: 600;
+        position: absolute;
+        top: -20px;
+    }
     &_list {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
+    }
+    .button_container {
+        text-align: center;
+        button {
+            padding: 10px 22px;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 10px;
+            color: white;
+            background-color: $brand-primary-color;
+        }
     }
 }
 </style>
