@@ -44,7 +44,7 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 .blue-line{
-    padding: 60px;
+    padding: 60px 0;
     background-color: $brand-primary-color;
     .container {
         height: 100%;
@@ -56,6 +56,7 @@ export default {
                 width: calc(100% / 5);
                 color: white;
                 display: flex;
+                justify-content: center;
                 align-items: center;
                 img {
                     max-width: 45px;

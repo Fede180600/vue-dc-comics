@@ -5,7 +5,7 @@
     <!-- MAIN -->
     <main>
       <div class="container">
-        Content goes here
+        <AppSeriesList />
       </div>
     </main>
     <AppBlueLine />
@@ -16,6 +16,7 @@
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppSeriesList from "./components/AppSeriesList.vue";
 import AppBlueLine from "./components/AppBlueLine.vue";
 import AppFooter from "./components/AppFooter.vue";
 
@@ -23,6 +24,7 @@ export default {
   name: 'App',
   components: {
     AppHeader,
+    AppSeriesList,
     AppBlueLine,
     AppFooter,
   },
