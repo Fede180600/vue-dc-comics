@@ -11,7 +11,12 @@
         </div>
         <div class="footer_bottom">
             <div class="container">
-                footer bottom 
+                <div class="col_btn">
+                    <button>sing-up now!</button>
+                </div> 
+                <div class="col_socials">
+
+                </div>
             </div>
         </div>
 
@@ -27,7 +32,7 @@ export default {
 @import "../style/variables.scss";
 
 .footer {
-    height: 470px;
+    // height: 470px;
     background-color: $brand-secondary-color;
 
     &_top {
@@ -53,6 +58,18 @@ export default {
 
     &_bottom {
         height: 70px;
+        .container {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            button {
+                padding: 10px;
+                text-transform: uppercase;
+                background-color: transparent;
+                color: white;
+                border: 1px solid $brand-primary-color;
+            }
+        }
     }
 }
 </style>
