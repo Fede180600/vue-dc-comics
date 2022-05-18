@@ -5,7 +5,6 @@
             <div class="container">
                 <div class="col_text"></div>
                 <div class="col_logo">
-                    <!-- <img src="../assets/img/dc-logo-bg.png" alt=""> -->
                 </div>
             </div>
         </div>
@@ -15,7 +14,12 @@
                     <button>sing-up now!</button>
                 </div> 
                 <div class="col_socials">
-
+                    <span>follow us</span>
+                    <ul class="socials">
+                        <li v-for="(social, index) in socials" :key="index">
+                            <img :src="require(`../assets/img/${social.logoSrc}`)" alt="">
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -24,10 +28,31 @@
 </template>
 <script>
 export default {
-    name: "AppFooter"
-
+    name: "AppFooter",
+    data: function() {
+        return {
+            socials: [
+                {
+                    logoSrc: "footer-facebook.png"
+                },
+                {
+                    logoSrc: "footer-periscope.png"
+                },
+                {
+                    logoSrc: "footer-pinterest.png"
+                },
+                {
+                    logoSrc: "footer-twitter.png"
+                },
+                {
+                    logoSrc: "footer-youtube.png"
+                },
+            ]
+        }
+    }
 }
 </script>
+
 <style lang="scss" scoped >
 @import "../style/variables.scss";
 
@@ -61,6 +86,7 @@ export default {
         .container {
             height: 100%;
             display: flex;
+            justify-content: space-between;
             align-items: center;
             button {
                 padding: 10px;
@@ -68,6 +94,27 @@ export default {
                 background-color: transparent;
                 color: white;
                 border: 1px solid $brand-primary-color;
+            }
+
+            .col_socials {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                span {
+                    text-transform: uppercase;
+                    color: $brand-primary-color;
+                    font-weight: 600;
+                }
+                .socials {
+                    margin-left: 20px;
+                    li {
+                        display: inline-block;
+                        margin: 0 10px;
+                        img {
+                            height: 30px;
+                        }
+                    }
+                }
             }
         }
     }
