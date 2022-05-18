@@ -97,9 +97,15 @@ export default {
 </script>
 
 <style lang="scss">
-.series_list {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+
+.series {
+    padding-top: 30px;
+    padding-bottom: 10px;
+    &_list {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
 }
 </style>

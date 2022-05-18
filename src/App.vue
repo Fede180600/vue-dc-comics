@@ -4,6 +4,7 @@
     <AppHeader />
     <!-- MAIN -->
     <main>
+      <AppBanner />
       <div class="container">
         <AppSeriesList />
       </div>
@@ -16,6 +17,7 @@
 
 <script>
 import AppHeader from "./components/AppHeader.vue";
+import AppBanner from "./components/AppBanner.vue"
 import AppSeriesList from "./components/AppSeriesList.vue";
 import AppBlueLine from "./components/AppBlueLine.vue";
 import AppFooter from "./components/AppFooter.vue";
@@ -24,6 +26,7 @@ export default {
   name: 'App',
   components: {
     AppHeader,
+    AppBanner,
     AppSeriesList,
     AppBlueLine,
     AppFooter,
@@ -35,7 +38,6 @@ export default {
 @import "./style/common.scss";
 main {
   width: 100%;
-  padding: 50px 0;
   color: white;
   background-color: #1c1c1c;
 }
