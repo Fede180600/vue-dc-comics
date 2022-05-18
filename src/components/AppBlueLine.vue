@@ -44,10 +44,9 @@ export default {
 <style lang="scss" scoped>
 @import "../style/variables.scss";
 .blue-line{
-    height: 150px;
+    padding: 60px;
     background-color: $brand-primary-color;
     .container {
-        border: 1px solid black;
         height: 100%;
         .icons-list {
             display: flex;
@@ -62,6 +61,12 @@ export default {
                     max-width: 45px;
                     max-height: 45px;
                     object-fit: contain;
+                    margin-right: 10px;
+                }
+                h3 {
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    font-size: 14px;;
                 }
             }
         }
