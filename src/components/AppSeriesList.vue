@@ -129,6 +129,7 @@ export default {
             font-size: 10px;
             color: white;
             background-color: $brand-primary-color;
+            border: 1px solid $brand-primary-color;
         }
     }
 }
